@@ -1,8 +1,4 @@
-# Developing a RESTful API With Node and TypeScript
-
-## Want to learn how to build this project?
-
-Check out the [blog post](http://mherman.org/blog/2016/11/05/developing-a-restful-api-with-node-and-typescript/#.WB3zyeErJE4).
+Coffee Shop API based on [blog post](http://mherman.org/blog/2016/11/05/developing-a-restful-api-with-node-and-typescript/#.WB3zyeErJE4).
 
 ## Want to use this project?
 
@@ -11,8 +7,25 @@ Check out the [blog post](http://mherman.org/blog/2016/11/05/developing-a-restfu
 1. Compile - `npm run build`
 1. Compile assets - `gulp assets`
 1. Run the development server - `npm start`
-1. Test - `npm test`
 
-## Sample Projects
+## API Documentation
 
-- [Simple whois REST API](https://github.com/wingsuitist/whoissv)
+1. Create a coffee shop
+```
+curl --data "name=Starbucks Coffee&address=New York, New York&latitude=123123&longitude=-999" http://localhost:3000/api/v1/coffee/create/
+```
+
+1. Update a coffee shop
+```
+curl -X PUT -d name=CatCafe -d address=California -d id=2 http://localhost:3000/api/v1/coffee/update/
+```
+
+1. Find a coffee shop
+```
+curl http://localhost:3000/api/v1/coffee/1
+```
+
+1. Delete a coffee shop
+```
+curl -X DELETE http://localhost:3000/api/v1/coffee/delete/1
+```
