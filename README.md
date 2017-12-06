@@ -31,3 +31,8 @@ curl http://localhost:3000/api/v1/coffee/1
 ```
 curl -X DELETE http://localhost:3000/api/v1/coffee/delete/1
 ```
+
+1. Find the nearest coffee shop given an address
+```
+curl --data "address=252 Guerrero St, San Francisco, CA 94103, USA" http://localhost:3000/api/v1/coffee/find
+```
