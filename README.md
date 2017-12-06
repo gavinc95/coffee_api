@@ -16,22 +16,22 @@ Written in Typescript and NodeJS
 curl --data "name=Starbucks Coffee&address=New York, New York&latitude=123123&longitude=-999" http://localhost:3000/api/v1/coffee/create/
 ```
 
-1. Update a coffee shop
+2. Update a coffee shop
 ```
 curl -X PUT -d name=CatCafe -d address=California -d id=2 http://localhost:3000/api/v1/coffee/update/
 ```
 
-1. Find a coffee shop
+3. Find a coffee shop
 ```
 curl http://localhost:3000/api/v1/coffee/1
 ```
 
-1. Delete a coffee shop
+4. Delete a coffee shop
 ```
 curl -X DELETE http://localhost:3000/api/v1/coffee/delete/1
 ```
 
-1. Find the nearest coffee shop given an address
+5. Find the nearest coffee shop given an address
 ```
 curl --data "address=252 Guerrero St, San Francisco, CA 94103, USA" http://localhost:3000/api/v1/coffee/find
 ```
