@@ -1,5 +1,7 @@
 Coffee Shop API based on [blog post](http://mherman.org/blog/2016/11/05/developing-a-restful-api-with-node-and-typescript/#.WB3zyeErJE4).
 
+Written in Typescript and NodeJS
+
 ## Want to use this project?
 
 1. Fork/Clone
