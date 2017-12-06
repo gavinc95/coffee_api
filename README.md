@@ -35,3 +35,4 @@ curl -X DELETE http://localhost:3000/api/v1/coffee/delete/1
 ```
 curl --data "address=252 Guerrero St, San Francisco, CA 94103, USA" http://localhost:3000/api/v1/coffee/find
 ```
+You should be able to see the coordinates of the inputed address, as well as the nears shop in your Terminal output. 
