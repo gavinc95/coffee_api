@@ -1,7 +1,8 @@
 "use strict";
-const http = require('http');
-const debug = require('debug');
-const App_1 = require('./App');
+Object.defineProperty(exports, "__esModule", { value: true });
+const http = require("http");
+const debug = require("debug");
+const App_1 = require("./App");
 debug('ts-express:server');
 const port = normalizePort(process.env.PORT || 3000);
 App_1.default.set('port', port);

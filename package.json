@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "test": "mocha --reporter spec --compilers ts:ts-node/register 'test/**/*.test.ts'",
+    "start": "nodemon dist/index.js",
     "build": "gulp scripts"
   },
   "keywords": [],
@@ -22,9 +21,13 @@
     "@types/node": "^6.0.46",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
+    "fast-csv": "^2.4.1",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.1.1",
     "mocha": "^3.1.2",
+    "node-fetch": "^1.7.3",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
     "ts-node": "^3.3.0",
     "typescript": "^2.0.6"
   },

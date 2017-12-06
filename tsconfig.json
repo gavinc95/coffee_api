@@ -2,7 +2,10 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "outDir": "dist"
+    "outDir": "dist",
+    "lib": [
+      "es2017"
+    ]
   },
   "include": [
     "src/**/*.ts"
